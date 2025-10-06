@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC+Guides&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .bannerIcon {
+    @apply w-14 h-14 bg-white dark:bg-black  text-xl inline-flex items-center justify-center rounded-md dark:shadow-shadowOne  shadow-shadowTwo hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;
+  }
+  .resumeLi {
+    @apply w-full h-20 bg-white dark:bg-black text-xl dark:shadow-shadowOne  shadow-shadowTwo text-black dark:text-white flex justify-center cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px] rounded-md;
+  }
+  .bgOpacity {
+    @apply bg-black bg-opacity-40;
+  }
+  .contactInput {
+    @apply w-full h-12 rounded-md border-b-[1px] border-b-gray-600 dark:bg-blackGradient bg-whiteGradient text-black dark:text-lightText px-4 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300;
+  }
+  .contactTextArea {
+    @apply w-full rounded-md border-b-[1px] border-b-gray-600 dark:bg-blackGradient bg-whiteGradient text-black dark:text-lightText px-4 py-2 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300 resize-none;
+  }
+}
+
+.active {
+  color: #ff014f;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.loader span {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  border: 4px solid #ff014f; /* Your primary color */
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
